@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Namaz Takibi</title>
+<meta name="theme-color" content="#e9efec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Ezan">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="track">
+<main class="wrap">
+  <header class="head">
+    <div id="date" class="date"></div>
+    <div class="hijri">Namaz takibi</div>
+  </header>
+
+  <section class="card" id="today"></section>
+
+  <section class="card stats" id="stats"></section>
+
+  <h2 class="sect">Geçmiş günler</h2>
+  <section class="card" id="history"></section>
+  <button class="btn ghost wide" id="moreBtn">Daha eski günleri göster</button>
+
+  <div class="backup">
+    <button class="btn ghost" id="exportBtn">Yedeği kopyala</button>
+    <button class="btn ghost" id="importBtn">Yedeği yükle</button>
+  </div>
+  <p id="status" class="status"></p>
+</main>
+
+<nav class="tabbar">
+  <a href="index.html"><span>🕌</span>Vakitler</a>
+  <a href="takip.html" class="active"><span>✅</span>Namaz Takibi</a>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>

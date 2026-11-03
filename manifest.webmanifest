@@ -1,0 +1,13 @@
+{
+  "name": "Ezan Vakitleri",
+  "short_name": "Ezan",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#e9efec",
+  "theme_color": "#e9efec",
+  "icons": [
+    { "src": "icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

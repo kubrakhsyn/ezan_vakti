@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ezan Vakitleri</title>
+<meta name="theme-color" content="#e9efec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Ezan">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+<main class="wrap">
+  <header class="head">
+    <div id="date" class="date"></div>
+    <div id="hijri" class="hijri"></div>
+  </header>
+
+  <div id="chips" class="chips"></div>
+
+  <section class="card hero" id="hero" hidden>
+    <div class="hero-label">Sıradaki vakit</div>
+    <div class="hero-name" id="heroName">—</div>
+    <div class="hero-time" id="heroTime">--:--</div>
+    <div class="hero-count" id="heroCount"></div>
+  </section>
+
+  <section class="card" id="times" hidden></section>
+
+  <section class="card" id="kerahat" hidden></section>
+
+  <section class="card empty" id="empty" hidden>
+    <p id="emptyMsg">Başlamak için bir şehir ekle.</p>
+    <button class="btn" id="emptyBtn">Şehir ekle</button>
+  </section>
+
+  <p id="status" class="status"></p>
+</main>
+
+<nav class="tabbar">
+  <a href="index.html" class="active"><span>🕌</span>Vakitler</a>
+  <a href="takip.html"><span>✅</span>Namaz Takibi</a>
+</nav>
+
+<dialog id="cityDlg">
+  <form method="dialog" id="cityForm" autocomplete="off">
+    <h3>Şehirler</h3>
+    <ul id="cityList" class="citylist"></ul>
+    <div class="field">
+      <input id="cityName" placeholder="Şehir (örn. Ankara)" required>
+      <input id="cityCountry" placeholder="Ülke (İngilizce, örn. Turkey)" value="Turkey" required>
+    </div>
+    <p id="cityMsg" class="msg"></p>
+    <div class="dlg-actions">
+      <button type="button" class="btn ghost" id="cityClose">Kapat</button>
+      <button type="submit" class="btn" id="cityAdd">Ekle</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
